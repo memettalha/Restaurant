@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="restorant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="baslik">
+        <div class="logo">
+            TALHA
+        </div>
+        <div class="nav">
+            <a href="#" class="">Anasayfa</a>
+            <a href="#" class="">Menü</a>
+            <a href="#" class="">Hakkında</a>
+            <a href="#" class="">Lokasyon</a>
+            <a href="#" class="">İletişim</a>
+        </div>
+
+        <div class="search">
+            <i class="fa-solid fa-search"></i>
+        </div>
+    </div>
+
+    <section>
+      <div class="orta">
+        <div class="yazi">
+            <h3><i>Are you Hungry?</i></h3>
+            <h1 >Don't Wait</h1>
+            <p>Let's start to order food now</p>
+            <div class="forbutton">
+                <button type="button">Checked out Menu</button>
+            </div>
+        </div>
+
+        <div class="resim" id="food">
+            <img src="food.jpg" alt="">
+        </div>
+    </div>
+
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+        </div>
+    </section>
+
+    <section class="section-2">
+       <div class="container">
+        <img class="food" id="food1" src="food.jpg" alt="">
+        <img class="food" id="food2" src="food1.png" alt="">
+       </div>
+    </section>
+
+    <!--Sidebar için-->
+    <div class="main">
+        <input type="checkbox" id="check">
+        <label class="btn_one" for="check"><i class="fa-solid fa-bars"></i></label>
+        <div class="sidebar_menu">
+            <div class="top">
+                <a href="#">Menü</a>
+                <label  class="btn-two" for="check">
+                <i class="fas fa-times"></i></label>
+            </div>
+            <div class="sidebar_body">
+                <div class="menü">
+                    <ul>
+                        <li><a href="">Sıcak İçecek</a></li>
+                        <li> <a href="">Soğuk İçecek</a></li>
+                        <li><a href="">Tatlılar</a></li>
+                        <li><a href="">Ara Sıcaklar</a></li>
+                        <li><a href="">Ana Yemekler</a></li>
+                        <li><a href="">Servis</a></li>
+                        <li><a href="">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="javascript.js">
+        let food1s=document.getElementById("food1");
+        let food2s=document.getElementById("food2");
+        let foods=document.getElementById("food");
+
+        food1s.addEventListener('click',()=>{
+            foods.style.backgroundImage="url('food1.png')"
+        })
+
+    </script>
+</body>
+</html>
